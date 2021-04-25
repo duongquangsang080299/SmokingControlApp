@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground_home"
+    tools:context=".activities.target.TargetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_add_new_target"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_add_new_target">
+
+        <Spinner
+            android:id="@+id/spinner_choose_target"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+
+            android:textAlignment="center"
+            android:background="@drawable/custom_background_container"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txv_title_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="bottom"
+            android:text="Start date"
+            android:textColor="#FFD55B"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/spinner_choose_target" />
+
+        <TextView
+            android:id="@+id/txv_start"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_background_container"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:text="20/10/2021"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txv_title_start_date" />
+
+        <TextView
+            android:id="@+id/txv_title_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:text="End date"
+            android:textColor="#FFD55B"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txv_start" />
+
+        <TextView
+            android:id="@+id/txv_end"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_background_container"
+            android:gravity="center"
+            android:fontFamily="@font/poppins"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txv_title_end_date" />
+
+        <TextView
+            android:id="@+id/txv_title_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:text="Count of cigarette"
+            android:textColor="#FFD55B"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txv_end" />
+
+        <EditText
+            android:id="@+id/edit_number_cigarette"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="@drawable/custom_background_container"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/txv_title_target" />
+
+        <Button
+            android:id="@+id/btn_add_target"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Submit"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/custom_button"
+            app:layout_constraintTop_toBottomOf="@id/edit_number_cigarette"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

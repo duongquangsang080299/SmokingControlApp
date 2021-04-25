@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "668420248758",
+    "firebase_url": "https://smoking-control-app-default-rtdb.firebaseio.com",
+    "project_id": "smoking-control-app",
+    "storage_bucket": "smoking-control-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668420248758:android:5790fd1b454697db3ec217",
+        "android_client_info": {
+          "package_name": "com.demo.smokingcontrolapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668420248758-fggv5hk2mlin0bjdq6s6nrieqqrvp83t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demo.smokingcontrolapp",
+            "certificate_hash": "0fdc3f67d565d8d4b64cb2faf2bd89234151a51b"
+          }
+        },
+        {
+          "client_id": "668420248758-sh7n5ca628egquij1r9cgnhlu00uneqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfM-dpymEtYwLFl9ym5mx7DiNErA7HJ_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668420248758-sh7n5ca628egquij1r9cgnhlu00uneqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
